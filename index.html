@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>Get Giphy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+	<div class="jumbotron text-center">
+		<h1>Get Giphy!</h1>
+		<div id="button-container"></div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+				<div class="form">
+					<form id="giphy-form">
+				      <label for="giphy-input">Giferator</label>
+				      <input type="text" id="giphy-input" class="form-control"><br>
+
+				      <!-- Button triggers new giphy to be added -->
+				      <button id="add-giphy" type="submit" class="btn btn-success">Add Gif</button>
+				    </form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="marketing container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+				<div class="hovereffect">
+					<img id="randomImg-0" class="img-responsive img-rounded center-block" src="" alt="Card image cap">
+					<div class="overlay">
+				   		<h2 id="randomTitle-0"></h2>
+				   		<a class="info" id="giphyLink-0" href="#">View</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+				<div class="hovereffect">
+					<img id="randomImg-1" class="img-responsive img-rounded center-block" src="" alt="Card image cap">
+					<div class="overlay">
+				   		<h2 id="randomTitle-1"></h2>
+				   		<a class="info" id="giphyLink-1" href="#">View</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+				<div class="hovereffect">
+					<img id="randomImg-2" class="img-responsive img-rounded center-block" src="" alt="Card image cap">
+					<div class="overlay">
+				   		<h2 id="randomTitle-2"></h2>
+				   		<a class="info" id="giphyLink-2" href="#">View</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+				<div class="hovereffect">
+					<img id="randomImg-3" class="img-responsive img-rounded center-block" src="" alt="Card image cap">
+					<div class="overlay">
+				   		<h2 id="randomTitle-3"></h2>
+				   		<a class="info" id="giphyLink-3" href="#">View</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+				<div class="hovereffect">
+					<img id="randomImg-4" class="img-responsive img-rounded center-block" src="" alt="Card image cap">
+					<div class="overlay">
+				   		<h2 id="randomTitle-4"></h2>
+				   		<a class="info" id="giphyLink-4" href="#">View</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+				<div class="hovereffect">
+					<img id="randomImg-5" class="img-responsive img-rounded center-block" src="" alt="Card image cap">
+					<div class="overlay">
+				   		<h2 id="randomTitle-5"></h2>
+				   		<a class="info" id="giphyLink-5" href="#">View</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+				<div class="hovereffect">
+					<img id="randomImg-6" class="img-responsive img-rounded center-block" src="" alt="Card image cap">
+					<div class="overlay">
+				   		<h2 id="randomTitle-6"></h2>
+				   		<a class="info" id="giphyLink-6" href="#">View</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+				<div class="hovereffect">
+					<img id="randomImg-7" class="img-responsive img-rounded center-block" src="" alt="Card image cap">
+					<div class="overlay">
+				   		<h2 id="randomTitle-7"></h2>
+				   		<a class="info" id="giphyLink-7" href="#">View</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+				<div class="hovereffect">
+					<img id="randomImg-8" class="img-responsive img-rounded center-block" src="" alt="Card image cap">
+					<div class="overlay">
+				   		<h2 id="randomTitle-8"></h2>
+				   		<a class="info" id="giphyLink-8" href="#">View</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+  	crossorigin="anonymous"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  	<script src="./assets/js/script.js"></script>
+</body>
+</html>
+
