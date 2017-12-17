@@ -1,11 +1,11 @@
 $('document').ready(function(){
 	let giphies = ["Puppies", "Food Porn", "Leslie Knope", "Fail", "GOT", "Winter", "Rihanna", "Socks", "Trending", "Joy"];
 	let searchTag = giphies[0];
-	let queryURL = `http://api.giphy.com/v1/gifs/search?q=${searchTag}&api_key=dc6zaTOxFJmzC&limit=9`;
+	let queryURL = `https://api.giphy.com/v1/gifs/search?q=${searchTag}&api_key=dc6zaTOxFJmzC&limit=9`;
 	
 	$(document).on('click', "button.giphyButton", function() {
       	searchTag = $(this).html();
-      	queryURL = `http://api.giphy.com/v1/gifs/search?q=${searchTag}&api_key=dc6zaTOxFJmzC&limit=9`
+      	queryURL = `https://api.giphy.com/v1/gifs/search?q=${searchTag}&api_key=dc6zaTOxFJmzC&limit=9`
       	console.log(searchTag);
       	callGiphy();
     });
