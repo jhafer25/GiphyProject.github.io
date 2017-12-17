@@ -6,7 +6,6 @@ $('document').ready(function(){
 	$(document).on('click', "button.giphyButton", function() {
       	searchTag = $(this).html();
       	queryURL = `https://api.giphy.com/v1/gifs/search?q=${searchTag}&api_key=dc6zaTOxFJmzC&limit=9`
-      	console.log(searchTag);
       	callGiphy();
     });
 
@@ -15,14 +14,10 @@ $('document').ready(function(){
         	url: queryURL,
         	method: "GET"
       	}).done(function(response) {
-      		console.log(response);
-      		// console.log(response.data[0].url);
-
       		for(let i = 0; i < response.data.length; i++){
       			let imgURL = response.data[i].images.original.url;
       			let linkURL = response.data[i].url;
       			let gifTitle = response.data[i].title;
-      			console.log(imgURL);
       			$('#randomImg-'+[i]).attr("src",imgURL);
       			$('#randomTitle-'+[i]).html(gifTitle);
       			$('#giphyLink-'+[i]).attr("href",linkURL);
